@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Car Rental System - Car Selection</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+			margin: 0;
+		}
+		
+		header {
+			background-color: #003366;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+			font-size: 30px;
+		}
+		
+		.container {
+			width: 80%;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0,0, 0.2);
+		}
+		
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+		
+		.car-list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		
+		.car {
+			width: 30%;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			transition: box-shadow 0.3s;
+			cursor: pointer;
+		}
+		
+		.car:hover {
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+		}
+		
+		.car img {
+			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+		}
+		
+		.car h3 {
+			padding: 10px;
+			font-size: 24px;
+			font-weight: bold;
+			margin: 0;
+		}
+		
+		.car p {
+			padding: 10px;
+			margin: 0;
+			font-size: 18px;
+		}
+		
+		.button {
+			background-color: #ffcc00;
+			color: #333;
+			border: none;
+			border-radius: 5px;
+			padding: 10px 20px;
+			font-size: 20px;
+			cursor: pointer;
+			transition: background-color 0.3s;
+		}
+		
+		.button:hover {
+			background-color: #e6b800;
+		}
+		
+	</style>
+</head>
+<body>
+	<header>
+		<h1>AutoGo</h1>
+	</header>
+	<div class="container">
+		<h2>Select a Car</h2>
+		<div class="car-list">
+			<div class="car">
+				<img src="car1.png" alt="Car 1">
+				<h3>TOYOTA Car</h3>
+				<p>$50/day</p>
+			</div>
+			<div class="car">
+				<img src="GMC.png" alt="GMC">
+				<h3>GMC Car</h3>
+				<p>$75/day</p>
+			</div>
+			<div class="car">
+				<img src="lx.png" alt="Car 3">
+				<h3>LEXUS Car</h3>
+				<p>$100/day</p>
+			</div>
+		</div>
+		<button class="button">Reserve Now</button>
+	</div>
+</body>
+</html>
